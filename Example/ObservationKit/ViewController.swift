@@ -11,18 +11,17 @@ import ObservationKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
+        AppUsecase.shared.counter.asAnyObservable().beObserved(by: self) { [weak self] _, value in
+            self?.label.text = "Count : \(value)"
+        }
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
 }
 

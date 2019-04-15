@@ -14,6 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		A80BA485226494DF0079E6C6 /* AppUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80BA484226494DF0079E6C6 /* AppUsecase.swift */; };
+		A80BA487226496420079E6C6 /* ContainedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80BA486226496420079E6C6 /* ContainedViewController.swift */; };
 		D759E17C88A699C3C550BB54 /* Pods_ObservationKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92956C3DC6666C738289F2C8 /* Pods_ObservationKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		92956C3DC6666C738289F2C8 /* Pods_ObservationKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObservationKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD2C3B2D43DDB73B2CC2617 /* Pods-ObservationKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObservationKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-ObservationKit_Tests/Pods-ObservationKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A3EBDA7C381A0B1B62479BFE /* Pods-ObservationKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObservationKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-ObservationKit_Example/Pods-ObservationKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A80BA484226494DF0079E6C6 /* AppUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUsecase.swift; sourceTree = "<group>"; };
+		A80BA486226496420079E6C6 /* ContainedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainedViewController.swift; sourceTree = "<group>"; };
 		B8C86BDEE9E5E4DBF04B5523 /* Pods-ObservationKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObservationKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ObservationKit_Tests/Pods-ObservationKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CAB6393FAEA0BDD3374D4461 /* ObservationKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ObservationKit.podspec; path = ../ObservationKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E69C1FACDD765A71E8CDFBA9 /* Pods_ObservationKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObservationKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +108,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				A80BA486226496420079E6C6 /* ContainedViewController.swift */,
+				A80BA484226494DF0079E6C6 /* AppUsecase.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -358,6 +364,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80BA487226496420079E6C6 /* ContainedViewController.swift in Sources */,
+				A80BA485226494DF0079E6C6 /* AppUsecase.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
