@@ -22,7 +22,7 @@ pod 'ObservationKit'
 
 ## Author
 
-Yuusuke Hasegawa, yuusuke.hasehase@gmail.com
+Yuusuke Hasegawa
 
 ## License
 
