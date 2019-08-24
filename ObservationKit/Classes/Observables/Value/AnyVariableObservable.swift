@@ -10,13 +10,13 @@ import Foundation
 
 // Type-Erasure for Observable
 // Reference: https://qiita.com/omochimetaru/items/5d26b95eb21e022106f0#type-erasure-継承-box-方式
-private class AnyValueObservableBox<Value> {
+private class AnyVariableObservableBox<Value> {
     
     func runWithLatestValue(_ execution: (Value) -> Void) {
         fatalError()
     }
     
-    func map<NewValue>(_ transform: @escaping (Value) -> NewValue) -> AnyValueObservable<NewValue> {
+    func map<NewValue>(_ transform: @escaping (Value) -> NewValue) -> AnyVariableObservable<NewValue> {
         fatalError()
     }
     
@@ -33,7 +33,7 @@ private class AnyValueObservableBox<Value> {
     
 }
 
-private class ValueObservableBox<V: ValueObservable>: AnyValueObservableBox<V.Value> {
+private class VariableObservableBox<V: ValueObservable>: AnyVariableObservableBox<V.Value> {
     
     private let base: V
     
@@ -45,7 +45,7 @@ private class ValueObservableBox<V: ValueObservable>: AnyValueObservableBox<V.Va
         return base.runWithLatestValue(execution)
     }
     
-    override func map<NewValue>(_ transform: @escaping (V.Value) -> NewValue) -> AnyValueObservable<NewValue> {
+    override func map<NewValue>(_ transform: @escaping (V.Value) -> NewValue) -> AnyVariableObservable<NewValue> {
         return base.map(transform)
     }
     
@@ -62,23 +62,26 @@ private class ValueObservableBox<V: ValueObservable>: AnyValueObservableBox<V.Va
     
 }
 
-public struct AnyValueObservable<Value> {
+//compatibility for previous version
+typealias AnyValueObservable = AnyVariableObservable
+
+public struct AnyVariableObservable<Value> {
     
-    private let box: AnyValueObservableBox<Value>
+    private let box: AnyVariableObservableBox<Value>
     
     init <V: ValueObservable> (_ base: V) where V.Value == Value {
-        box = ValueObservableBox<V>(base)
+        box = VariableObservableBox<V>(base)
     }
     
 }
 
-extension AnyValueObservable: ValueObservable {
+extension AnyVariableObservable: ValueObservable {
     
     public func runWithLatestValue(_ execution: (Value) -> Void) {
         return box.runWithLatestValue(execution)
     }
     
-    public func map<NewValue>(_ transform: @escaping (Value) -> NewValue) -> AnyValueObservable<NewValue> {
+    public func map<NewValue>(_ transform: @escaping (Value) -> NewValue) -> AnyVariableObservable<NewValue> {
         return box.map(transform)
     }
     

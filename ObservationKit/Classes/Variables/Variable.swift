@@ -34,8 +34,8 @@ public final class Variable<Value> {
         accept(newValue)
     }
 
-    public func asAnyObservable() -> AnyValueObservable<Value> {
-        return AnyValueObservable(self)
+    public func asAnyObservable() -> AnyVariableObservable<Value> {
+        return AnyVariableObservable(self)
     }
     
 }
@@ -81,7 +81,7 @@ extension Variable: ValueObservable {
         
     }
     
-    public func map <NewValue> (_ transform: @escaping (Value) -> NewValue) -> AnyValueObservable<NewValue> {
+    public func map <NewValue> (_ transform: @escaping (Value) -> NewValue) -> AnyVariableObservable<NewValue> {
         
         let transformedValue = transform(value)
         let transformedVariable = Variable<NewValue>(transformedValue)
@@ -89,7 +89,7 @@ extension Variable: ValueObservable {
         addObserver(transformedVariable, queue: .asyncOnMain, handler: { $0.accept(transform($1)) })
         relatedVariables.append(transformedVariable)
         
-        let wrappedVariable = AnyValueObservable(transformedVariable)
+        let wrappedVariable = AnyVariableObservable(transformedVariable)
         return wrappedVariable
         
     }
