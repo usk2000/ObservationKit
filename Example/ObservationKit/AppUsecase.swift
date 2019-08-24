@@ -14,9 +14,13 @@ class AppUsecase {
     static let shared = AppUsecase()
     private init() { setup() }
     
-    let counter: Variable = .init(0)
     private let interactor: Relay<Void> = .init()
     
+    //output
+    let counter: Variable = .init(0)
+    let value: Variable<LazyVariable<Int>> = .init(.uninitialized)
+    
+    //input
     func countUp() {
         interactor.onNext(())
     }
@@ -28,7 +32,8 @@ private extension AppUsecase {
     func setup() {
         
         interactor.asAnyObservable().beObserved(by: self, .asyncOnGlobal(qos: .userInitiated)) { [unowned self] _, _ in
-            self.counter.accept { $0 + 1 }
+            self.counter.accept { $0 + 1 }            
+            
         }
         
     }
