@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"ObservationKit::ObservationKitPackageTests::ProductTarget" /* ObservationKitPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_36 /* Build configuration list for PBXAggregateTarget "ObservationKitPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_39 /* PBXTargetDependency */,
+			);
+			name = ObservationKitPackageTests;
+			productName = ObservationKitPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		B9A81D9A234338A60026C1A2 /* ExecutionQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A81D952343389A0026C1A2 /* ExecutionQueue.swift */; };
+		B9A81D9B234338AB0026C1A2 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A81D962343389A0026C1A2 /* Observation.swift */; };
+		B9A81D9C234338AF0026C1A2 /* AnyRelayObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A81D982343389A0026C1A2 /* AnyRelayObservable.swift */; };
+		B9A81D9D234338AF0026C1A2 /* RelayObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A81D992343389A0026C1A2 /* RelayObservable.swift */; };
+		B9A81DA2234338BD0026C1A2 /* LazyVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A81D9F234338B70026C1A2 /* LazyVariable.swift */; };
+		B9A81DA3234338BD0026C1A2 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A81DA0234338B70026C1A2 /* Variable.swift */; };
+		B9A81DA4234338BD0026C1A2 /* Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A81DA1234338B70026C1A2 /* Relay.swift */; };
+		B9A81DA5234338D00026C1A2 /* ValueObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A81D932343389A0026C1A2 /* ValueObservable.swift */; };
+		B9A81DA6234338D00026C1A2 /* AnyVariableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A81D942343389A0026C1A2 /* AnyVariableObservable.swift */; };
+		OBJ_27 /* ObservationKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ObservationKit.swift */; };
+		OBJ_34 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_45 /* ObservationKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ObservationKitTests.swift */; };
+		OBJ_46 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
+		OBJ_48 /* ObservationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ObservationKit::ObservationKit::Product" /* ObservationKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9A81D8F234337E40026C1A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ObservationKit::ObservationKit";
+			remoteInfo = ObservationKit;
+		};
+		B9A81D90234337E50026C1A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ObservationKit::ObservationKitTests";
+			remoteInfo = ObservationKitTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B9A81D932343389A0026C1A2 /* ValueObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueObservable.swift; sourceTree = "<group>"; };
+		B9A81D942343389A0026C1A2 /* AnyVariableObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyVariableObservable.swift; sourceTree = "<group>"; };
+		B9A81D952343389A0026C1A2 /* ExecutionQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionQueue.swift; sourceTree = "<group>"; };
+		B9A81D962343389A0026C1A2 /* Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
+		B9A81D982343389A0026C1A2 /* AnyRelayObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRelayObservable.swift; sourceTree = "<group>"; };
+		B9A81D992343389A0026C1A2 /* RelayObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayObservable.swift; sourceTree = "<group>"; };
+		B9A81D9F234338B70026C1A2 /* LazyVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVariable.swift; sourceTree = "<group>"; };
+		B9A81DA0234338B70026C1A2 /* Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		B9A81DA1234338B70026C1A2 /* Relay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relay.swift; sourceTree = "<group>"; };
+		OBJ_12 /* ObservationKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationKitTests.swift; sourceTree = "<group>"; };
+		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_17 /* ObservationKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ObservationKit; sourceTree = SOURCE_ROOT; };
+		OBJ_18 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
+		OBJ_19 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_20 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_21 /* ObservationKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ObservationKit.podspec; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* ObservationKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationKit.swift; sourceTree = "<group>"; };
+		"ObservationKit::ObservationKit::Product" /* ObservationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObservationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"ObservationKit::ObservationKitTests::Product" /* ObservationKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ObservationKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_48 /* ObservationKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9A81D912343389A0026C1A2 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				B9A81D922343389A0026C1A2 /* Value */,
+				B9A81D952343389A0026C1A2 /* ExecutionQueue.swift */,
+				B9A81D962343389A0026C1A2 /* Observation.swift */,
+				B9A81D972343389A0026C1A2 /* Relay */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
+		B9A81D922343389A0026C1A2 /* Value */ = {
+			isa = PBXGroup;
+			children = (
+				B9A81D932343389A0026C1A2 /* ValueObservable.swift */,
+				B9A81D942343389A0026C1A2 /* AnyVariableObservable.swift */,
+			);
+			path = Value;
+			sourceTree = "<group>";
+		};
+		B9A81D972343389A0026C1A2 /* Relay */ = {
+			isa = PBXGroup;
+			children = (
+				B9A81D982343389A0026C1A2 /* AnyRelayObservable.swift */,
+				B9A81D992343389A0026C1A2 /* RelayObservable.swift */,
+			);
+			path = Relay;
+			sourceTree = "<group>";
+		};
+		B9A81D9E234338B70026C1A2 /* Variables */ = {
+			isa = PBXGroup;
+			children = (
+				B9A81D9F234338B70026C1A2 /* LazyVariable.swift */,
+				B9A81DA0234338B70026C1A2 /* Variable.swift */,
+				B9A81DA1234338B70026C1A2 /* Relay.swift */,
+			);
+			path = Variables;
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* ObservationKitTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_11 /* ObservationKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* ObservationKitTests.swift */,
+				OBJ_13 /* XCTestManifests.swift */,
+			);
+			name = ObservationKitTests;
+			path = Tests/ObservationKitTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"ObservationKit::ObservationKit::Product" /* ObservationKit.framework */,
+				"ObservationKit::ObservationKitTests::Product" /* ObservationKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_14 /* Products */,
+				OBJ_17 /* ObservationKit */,
+				OBJ_18 /* Example */,
+				OBJ_19 /* LICENSE */,
+				OBJ_20 /* README.md */,
+				OBJ_21 /* ObservationKit.podspec */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* ObservationKit */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* ObservationKit */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* ObservationKit.swift */,
+				B9A81D9E234338B70026C1A2 /* Variables */,
+				B9A81D912343389A0026C1A2 /* Observables */,
+			);
+			name = ObservationKit;
+			path = Sources/ObservationKit;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"ObservationKit::ObservationKit" /* ObservationKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "ObservationKit" */;
+			buildPhases = (
+				OBJ_26 /* Sources */,
+				OBJ_28 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObservationKit;
+			productName = ObservationKit;
+			productReference = "ObservationKit::ObservationKit::Product" /* ObservationKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"ObservationKit::ObservationKitTests" /* ObservationKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_41 /* Build configuration list for PBXNativeTarget "ObservationKitTests" */;
+			buildPhases = (
+				OBJ_44 /* Sources */,
+				OBJ_47 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_49 /* PBXTargetDependency */,
+			);
+			name = ObservationKitTests;
+			productName = ObservationKitTests;
+			productReference = "ObservationKit::ObservationKitTests::Product" /* ObservationKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"ObservationKit::SwiftPMPackageDescription" /* ObservationKitPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_30 /* Build configuration list for PBXNativeTarget "ObservationKitPackageDescription" */;
+			buildPhases = (
+				OBJ_33 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObservationKitPackageDescription;
+			productName = ObservationKitPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "ObservationKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"ObservationKit::ObservationKit" /* ObservationKit */,
+				"ObservationKit::SwiftPMPackageDescription" /* ObservationKitPackageDescription */,
+				"ObservationKit::ObservationKitPackageTests::ProductTarget" /* ObservationKitPackageTests */,
+				"ObservationKit::ObservationKitTests" /* ObservationKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				B9A81D9D234338AF0026C1A2 /* RelayObservable.swift in Sources */,
+				B9A81DA3234338BD0026C1A2 /* Variable.swift in Sources */,
+				B9A81DA2234338BD0026C1A2 /* LazyVariable.swift in Sources */,
+				B9A81DA4234338BD0026C1A2 /* Relay.swift in Sources */,
+				B9A81D9A234338A60026C1A2 /* ExecutionQueue.swift in Sources */,
+				B9A81DA6234338D00026C1A2 /* AnyVariableObservable.swift in Sources */,
+				B9A81D9C234338AF0026C1A2 /* AnyRelayObservable.swift in Sources */,
+				B9A81D9B234338AB0026C1A2 /* Observation.swift in Sources */,
+				OBJ_27 /* ObservationKit.swift in Sources */,
+				B9A81DA5234338D00026C1A2 /* ValueObservable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_34 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_45 /* ObservationKitTests.swift in Sources */,
+				OBJ_46 /* XCTestManifests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ObservationKit::ObservationKitTests" /* ObservationKitTests */;
+			targetProxy = B9A81D90234337E50026C1A2 /* PBXContainerItemProxy */;
+		};
+		OBJ_49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ObservationKit::ObservationKit" /* ObservationKit */;
+			targetProxy = B9A81D8F234337E40026C1A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ObservationKit.xcodeproj/ObservationKit_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ObservationKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ObservationKit;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ObservationKit.xcodeproj/ObservationKit_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ObservationKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ObservationKit;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		OBJ_31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		OBJ_42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ObservationKit.xcodeproj/ObservationKitTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ObservationKitTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ObservationKit.xcodeproj/ObservationKitTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ObservationKitTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "ObservationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_23 /* Build configuration list for PBXNativeTarget "ObservationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_24 /* Debug */,
+				OBJ_25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_30 /* Build configuration list for PBXNativeTarget "ObservationKitPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_31 /* Debug */,
+				OBJ_32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_36 /* Build configuration list for PBXAggregateTarget "ObservationKitPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_37 /* Debug */,
+				OBJ_38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_41 /* Build configuration list for PBXNativeTarget "ObservationKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_42 /* Debug */,
+				OBJ_43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
