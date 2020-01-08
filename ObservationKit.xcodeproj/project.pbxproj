@@ -66,11 +66,8 @@
 		B9A81DA1234338B70026C1A2 /* Relay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relay.swift; sourceTree = "<group>"; };
 		OBJ_12 /* ObservationKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationKitTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_17 /* ObservationKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ObservationKit; sourceTree = SOURCE_ROOT; };
-		OBJ_18 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
 		OBJ_19 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_20 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		OBJ_21 /* ObservationKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ObservationKit.podspec; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* ObservationKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationKit.swift; sourceTree = "<group>"; };
 		"ObservationKit::ObservationKit::Product" /* ObservationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObservationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,20 +159,16 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_10 /* Tests */,
 				OBJ_14 /* Products */,
-				OBJ_17 /* ObservationKit */,
-				OBJ_18 /* Example */,
 				OBJ_19 /* LICENSE */,
 				OBJ_20 /* README.md */,
-				OBJ_21 /* ObservationKit.podspec */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -263,7 +256,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
